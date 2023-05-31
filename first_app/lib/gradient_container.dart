@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:first_app/styled_text.dart';
 
-var startAlignment = Alignment.topLeft;
-var endAlignment = Alignment.bottomRight;
+//変数が変更されない事がわかっている場合はfinal型を推奨
+final startAlignment = Alignment.topLeft;
+final endAlignment = Alignment.bottomRight;
 
 class GradientContainer extends StatelessWidget {
   const GradientContainer({super.key});
@@ -18,7 +19,7 @@ class GradientContainer extends StatelessWidget {
           ),
         ),
         child: const Center(
-          child: StyledText(),
+          child: StyledText('Hello world'),
         ));
   }
 }
